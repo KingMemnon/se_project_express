@@ -11,8 +11,10 @@
   "author": "Christopher",
   "license": "ISC",
   "dependencies": {
+    "bson": "^6.10.4",
     "express": "^4.21.2",
-    "mongoose": "^8.9.5"
+    "mongoose": "^8.9.5",
+    "validator": "^13.15.20"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
