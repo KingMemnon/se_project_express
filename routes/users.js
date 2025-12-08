@@ -1,8 +1,12 @@
 const router = require("express").Router();
-router.get("/users", () => console.log("GET users"));
-router.get("/:userId", () => console.log("GET users by ID"));
-router.post("/users", () => console.log("POST users"));
+const { getUsers, createUser, getUser } = require("../controllers/users");
+
+router.get("/", getUsers);
+router.get("/:userId", getUser);
+router.post("/", createUser);
 
 // const ClothingItem = require("../models/clothingItem");
 
 module.exports = router;
+
+//
